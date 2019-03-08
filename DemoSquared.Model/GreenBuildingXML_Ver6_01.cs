@@ -49,27 +49,27 @@ namespace DemoSquared.Model {
         private bool surfaceReferenceLocationFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AirLoop", typeof(AirLoop), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Campus", typeof(Campus), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Construction", typeof(Construction), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DaySchedule", typeof(DaySchedule), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DocumentHistory", typeof(DocumentHistory), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ExtEquip", typeof(ExtEquip), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HydronicLoop", typeof(HydronicLoop), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IntEquip", typeof(IntEquip), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Layer", typeof(Layer), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LightingControl", typeof(LightingControl), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LightingSystem", typeof(LightingSystem), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Material", typeof(Material), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Meter", typeof(Meter), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Results", typeof(Results), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Schedule", typeof(Schedule), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SimulationParameters", typeof(SimulationParameters), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Weather", typeof(Weather), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WeekSchedule", typeof(WeekSchedule), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WindowType", typeof(WindowType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Zone", typeof(Zone), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("aecXML", typeof(object), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AirLoop", typeof(AirLoop))]
+        [System.Xml.Serialization.XmlElementAttribute("Campus", typeof(Campus))]
+        [System.Xml.Serialization.XmlElementAttribute("Construction", typeof(Construction))]
+        [System.Xml.Serialization.XmlElementAttribute("DaySchedule", typeof(DaySchedule))]
+        [System.Xml.Serialization.XmlElementAttribute("DocumentHistory", typeof(DocumentHistory))]
+        [System.Xml.Serialization.XmlElementAttribute("ExtEquip", typeof(ExtEquip))]
+        [System.Xml.Serialization.XmlElementAttribute("HydronicLoop", typeof(HydronicLoop))]
+        [System.Xml.Serialization.XmlElementAttribute("IntEquip", typeof(IntEquip))]
+        [System.Xml.Serialization.XmlElementAttribute("Layer", typeof(Layer))]
+        [System.Xml.Serialization.XmlElementAttribute("LightingControl", typeof(LightingControl))]
+        [System.Xml.Serialization.XmlElementAttribute("LightingSystem", typeof(LightingSystem))]
+        [System.Xml.Serialization.XmlElementAttribute("Material", typeof(Material))]
+        [System.Xml.Serialization.XmlElementAttribute("Meter", typeof(Meter))]
+        [System.Xml.Serialization.XmlElementAttribute("Results", typeof(Results))]
+        [System.Xml.Serialization.XmlElementAttribute("Schedule", typeof(Schedule))]
+        [System.Xml.Serialization.XmlElementAttribute("SimulationParameters", typeof(SimulationParameters))]
+        [System.Xml.Serialization.XmlElementAttribute("Weather", typeof(Weather))]
+        [System.Xml.Serialization.XmlElementAttribute("WeekSchedule", typeof(WeekSchedule))]
+        [System.Xml.Serialization.XmlElementAttribute("WindowType", typeof(WindowType))]
+        [System.Xml.Serialization.XmlElementAttribute("Zone", typeof(Zone))]
+        [System.Xml.Serialization.XmlElementAttribute("aecXML", typeof(object))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -225,12 +225,12 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AirLoopEquipment", typeof(AirLoopEquipment), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PressureControl", typeof(PressureControl), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("TemperatureControl", typeof(TemperatureControl), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AirLoopEquipment", typeof(AirLoopEquipment))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("PressureControl", typeof(PressureControl))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("TemperatureControl", typeof(TemperatureControl))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -242,7 +242,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType28[] ItemsElementName {
             get {
@@ -329,64 +329,64 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AirStreamFraction", typeof(AirStreamFraction), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Capacity", typeof(Capacity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Control", typeof(Control), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CoolingCoilSetpointResetType", typeof(CoolingCoilSetpointResetType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CoolingCoilType", typeof(CoolingCoilType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CyclingRateMax", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DamperHeatingAction", typeof(DamperHeatingAction), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DeltaP", typeof(DeltaP), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DeltaT", typeof(DeltaT), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("EconomizerLockout", typeof(EconomizerLockout), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Efficiency", typeof(Efficiency), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Energy", typeof(Energy), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Enthalpy", typeof(Enthalpy), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FlowType", typeof(FlowType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FractionOnCyclePowerUse", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GasPreheatCoilEfficiency", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GasPreheatCoilParasiticElectricLoad", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HeatPumpDefrostControl", typeof(HeatPumpDefrostControl), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HeatPumpDefrostStrategy", typeof(HeatPumpDefrostStrategy), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HeatPumpFanDelayTime", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HeatPumpTimeConstant", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HeatRecoveryType", typeof(HeatRecoveryType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HeatingCoilSetpointResetType", typeof(HeatingCoilSetpointResetType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopId", typeof(HydronicLoopId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LatentHeatRecoveryEffectiveness", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Life", typeof(Life), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MaxRelativeHumidity", typeof(MaxRelativeHumidity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MaximumFlow", typeof(MaximumFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MaximumFlowFractionDuringReheat", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinFlow", typeof(MinFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinRelativeHumidity", typeof(MinRelativeHumidity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Model", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MotorInAirstream", typeof(bool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("NightCycleControl", typeof(NightCycleControl), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("OperationSchedule", typeof(OperationSchedule), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ParallelFanOnFlowFraction", typeof(ParallelFanOnFlowFraction), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Performance", typeof(Performance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Power", typeof(Power), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PreheatCoilType", typeof(PreheatCoilType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RatedFlow", typeof(RatedFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RefrigerantType", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ResetTemperature", typeof(ResetTemperature), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SensibleHeatRecoveryEffectiveness", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SupplementalGasHeatingCoilEfficiency", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SupplementalGasHeatingCoilParasiticElectricLoad", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SupplementalHeatingCoilCapacity", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SupplementalHeatingCoilType", typeof(SupplementalHeatingCoilType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Temp", typeof(Temp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WaterLoss", typeof(WaterLoss), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Weight", typeof(Weight), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AirStreamFraction", typeof(AirStreamFraction))]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("Capacity", typeof(Capacity))]
+        [System.Xml.Serialization.XmlElementAttribute("Control", typeof(Control))]
+        [System.Xml.Serialization.XmlElementAttribute("CoolingCoilSetpointResetType", typeof(CoolingCoilSetpointResetType))]
+        [System.Xml.Serialization.XmlElementAttribute("CoolingCoilType", typeof(CoolingCoilType))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("CyclingRateMax", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("DamperHeatingAction", typeof(DamperHeatingAction))]
+        [System.Xml.Serialization.XmlElementAttribute("DeltaP", typeof(DeltaP))]
+        [System.Xml.Serialization.XmlElementAttribute("DeltaT", typeof(DeltaT))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("EconomizerLockout", typeof(EconomizerLockout))]
+        [System.Xml.Serialization.XmlElementAttribute("Efficiency", typeof(Efficiency))]
+        [System.Xml.Serialization.XmlElementAttribute("Energy", typeof(Energy))]
+        [System.Xml.Serialization.XmlElementAttribute("Enthalpy", typeof(Enthalpy))]
+        [System.Xml.Serialization.XmlElementAttribute("FlowType", typeof(FlowType))]
+        [System.Xml.Serialization.XmlElementAttribute("FractionOnCyclePowerUse", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("GasPreheatCoilEfficiency", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("GasPreheatCoilParasiticElectricLoad", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("HeatPumpDefrostControl", typeof(HeatPumpDefrostControl))]
+        [System.Xml.Serialization.XmlElementAttribute("HeatPumpDefrostStrategy", typeof(HeatPumpDefrostStrategy))]
+        [System.Xml.Serialization.XmlElementAttribute("HeatPumpFanDelayTime", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("HeatPumpTimeConstant", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("HeatRecoveryType", typeof(HeatRecoveryType))]
+        [System.Xml.Serialization.XmlElementAttribute("HeatingCoilSetpointResetType", typeof(HeatingCoilSetpointResetType))]
+        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopId", typeof(HydronicLoopId))]
+        [System.Xml.Serialization.XmlElementAttribute("LatentHeatRecoveryEffectiveness", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("Life", typeof(Life))]
+        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("MaxRelativeHumidity", typeof(MaxRelativeHumidity))]
+        [System.Xml.Serialization.XmlElementAttribute("MaximumFlow", typeof(MaximumFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("MaximumFlowFractionDuringReheat", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("MinFlow", typeof(MinFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("MinRelativeHumidity", typeof(MinRelativeHumidity))]
+        [System.Xml.Serialization.XmlElementAttribute("Model", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("MotorInAirstream", typeof(bool))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("NightCycleControl", typeof(NightCycleControl))]
+        [System.Xml.Serialization.XmlElementAttribute("OperationSchedule", typeof(OperationSchedule))]
+        [System.Xml.Serialization.XmlElementAttribute("ParallelFanOnFlowFraction", typeof(ParallelFanOnFlowFraction))]
+        [System.Xml.Serialization.XmlElementAttribute("Performance", typeof(Performance))]
+        [System.Xml.Serialization.XmlElementAttribute("Power", typeof(Power))]
+        [System.Xml.Serialization.XmlElementAttribute("PreheatCoilType", typeof(PreheatCoilType))]
+        [System.Xml.Serialization.XmlElementAttribute("RatedFlow", typeof(RatedFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("RefrigerantType", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ResetTemperature", typeof(ResetTemperature))]
+        [System.Xml.Serialization.XmlElementAttribute("SensibleHeatRecoveryEffectiveness", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("SupplementalGasHeatingCoilEfficiency", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("SupplementalGasHeatingCoilParasiticElectricLoad", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("SupplementalHeatingCoilCapacity", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("SupplementalHeatingCoilType", typeof(SupplementalHeatingCoilType))]
+        [System.Xml.Serialization.XmlElementAttribute("Temp", typeof(Temp))]
+        [System.Xml.Serialization.XmlElementAttribute("WaterLoss", typeof(WaterLoss))]
+        [System.Xml.Serialization.XmlElementAttribute("Weight", typeof(Weight))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -398,7 +398,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType27[] ItemsElementName {
             get {
@@ -908,8 +908,8 @@ namespace DemoSquared.Model {
         private costTypeEnum costTypeField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CostValue", typeof(CostValue), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CostValue", typeof(CostValue))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -2016,7 +2016,7 @@ namespace DemoSquared.Model {
         private System.Xml.XmlElement[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute()]
         public System.Xml.XmlElement[] Items {
             get {
                 return this.itemsField;
@@ -2620,7 +2620,7 @@ namespace DemoSquared.Model {
         private string scheduleIdRefField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("OperationRange", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("OperationRange")]
         public OperationRange[] Items {
             get {
                 return this.itemsField;
@@ -2654,8 +2654,8 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HighValue", typeof(HighValue), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LowValue", typeof(LowValue), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("HighValue", typeof(HighValue))]
+        [System.Xml.Serialization.XmlElementAttribute("LowValue", typeof(LowValue))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -2798,8 +2798,7 @@ namespace DemoSquared.Model {
         private string performanceTypeField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Equation", typeof(Equation), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PointData", typeof(PointData), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Equation", typeof(Equation))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public Equation[] Items {
             get {
@@ -2811,7 +2810,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType26[] ItemsElementName {
             get {
@@ -2857,9 +2856,9 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DependentVariable", typeof(DependentVariable), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Expression", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IndependentVariable", typeof(IndependentVariable), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("DependentVariable", typeof(DependentVariable))]
+        [System.Xml.Serialization.XmlElementAttribute("Expression", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("IndependentVariable", typeof(IndependentVariable))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -2896,8 +2895,8 @@ namespace DemoSquared.Model {
         private bool maxValueFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public string[] Items {
             get {
@@ -2909,7 +2908,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType24[] ItemsElementName {
             get {
@@ -3018,8 +3017,8 @@ namespace DemoSquared.Model {
         private string dataTypeField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public string[] Items {
             get {
@@ -3031,7 +3030,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType23[] ItemsElementName {
             get {
@@ -3090,9 +3089,9 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Data", typeof(Data), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DependentVariable", typeof(DependentVariable), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IndependentVariable", typeof(IndependentVariable), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Data", typeof(Data))]
+        [System.Xml.Serialization.XmlElementAttribute("DependentVariable", typeof(DependentVariable))]
+        [System.Xml.Serialization.XmlElementAttribute("IndependentVariable", typeof(IndependentVariable))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -3117,8 +3116,8 @@ namespace DemoSquared.Model {
         private ItemsChoiceType25[] itemsElementNameField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DependentValue", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IndependentValue", typeof(decimal), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("DependentValue", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("IndependentValue", typeof(decimal))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public decimal[] Items {
             get {
@@ -3130,7 +3129,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType25[] ItemsElementName {
             get {
@@ -3569,9 +3568,9 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ClosedShell", typeof(ClosedShell), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("ClosedShell", typeof(ClosedShell))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -3583,7 +3582,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType[] ItemsElementName {
             get {
@@ -3630,7 +3629,7 @@ namespace DemoSquared.Model {
         private PolyLoop[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PolyLoop", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("PolyLoop")]
         public PolyLoop[] Items {
             get {
                 return this.itemsField;
@@ -3653,7 +3652,7 @@ namespace DemoSquared.Model {
         private CartesianPoint[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint")]
         public CartesianPoint[] Items {
             get {
                 return this.itemsField;
@@ -3676,7 +3675,7 @@ namespace DemoSquared.Model {
         private Coordinate[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Coordinate", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Coordinate")]
         public Coordinate[] Items {
             get {
                 return this.itemsField;
@@ -4289,9 +4288,9 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DesignPressure", typeof(DesignPressure), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MaxPressure", typeof(MaxPressure), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinPressure", typeof(MinPressure), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("DesignPressure", typeof(DesignPressure))]
+        [System.Xml.Serialization.XmlElementAttribute("MaxPressure", typeof(MaxPressure))]
+        [System.Xml.Serialization.XmlElementAttribute("MinPressure", typeof(MinPressure))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -4469,10 +4468,10 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DesignTemp", typeof(DesignTemp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MaxTemp", typeof(MaxTemp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinTemp", typeof(MinTemp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ResetTemperature", typeof(ResetTemperature), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("DesignTemp", typeof(DesignTemp))]
+        [System.Xml.Serialization.XmlElementAttribute("MaxTemp", typeof(MaxTemp))]
+        [System.Xml.Serialization.XmlElementAttribute("MinTemp", typeof(MinTemp))]
+        [System.Xml.Serialization.XmlElementAttribute("ResetTemperature", typeof(ResetTemperature))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -4831,22 +4830,22 @@ namespace DemoSquared.Model {
         private string ifcGUIDField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AltEnergySource", typeof(AltEnergySource), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Building", typeof(Building), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DaylightSavings", typeof(bool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ExtEquipId", typeof(ExtEquipId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Life", typeof(Life), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LightControlId", typeof(LightControlId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Lighting", typeof(Lighting), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Location", typeof(Location), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MeterId", typeof(MeterId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Surface", typeof(Surface), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Transportation", typeof(Transportation), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Vegetation", typeof(Vegetation), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("YearModeled", typeof(YearModeled), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AltEnergySource", typeof(AltEnergySource))]
+        [System.Xml.Serialization.XmlElementAttribute("Building", typeof(Building))]
+        [System.Xml.Serialization.XmlElementAttribute("DaylightSavings", typeof(bool))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ExtEquipId", typeof(ExtEquipId))]
+        [System.Xml.Serialization.XmlElementAttribute("Life", typeof(Life))]
+        [System.Xml.Serialization.XmlElementAttribute("LightControlId", typeof(LightControlId))]
+        [System.Xml.Serialization.XmlElementAttribute("Lighting", typeof(Lighting))]
+        [System.Xml.Serialization.XmlElementAttribute("Location", typeof(Location))]
+        [System.Xml.Serialization.XmlElementAttribute("MeterId", typeof(MeterId))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("Surface", typeof(Surface))]
+        [System.Xml.Serialization.XmlElementAttribute("Transportation", typeof(Transportation))]
+        [System.Xml.Serialization.XmlElementAttribute("Vegetation", typeof(Vegetation))]
+        [System.Xml.Serialization.XmlElementAttribute("YearModeled", typeof(YearModeled))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -4858,7 +4857,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType8[] ItemsElementName {
             get {
@@ -4934,7 +4933,7 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("MeterId", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("MeterId")]
         public MeterId[] Items {
             get {
                 return this.itemsField;
@@ -5057,20 +5056,20 @@ namespace DemoSquared.Model {
         private string ifcGUIDField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Area", typeof(Area), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("AverageNumberOfFloors", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("BuildingStorey", typeof(BuildingStorey), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("InfiltrationFlow", typeof(InfiltrationFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IntEquipId", typeof(IntEquipId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Lighting", typeof(Lighting), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MeterId", typeof(MeterId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PeakDomesticHotWaterFlow", typeof(PeakDomesticHotWaterFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Space", typeof(Space), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SpaceBoundary", typeof(SpaceBoundary), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("StreetAddress", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Area", typeof(Area))]
+        [System.Xml.Serialization.XmlElementAttribute("AverageNumberOfFloors", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("BuildingStorey", typeof(BuildingStorey))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("InfiltrationFlow", typeof(InfiltrationFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("IntEquipId", typeof(IntEquipId))]
+        [System.Xml.Serialization.XmlElementAttribute("Lighting", typeof(Lighting))]
+        [System.Xml.Serialization.XmlElementAttribute("MeterId", typeof(MeterId))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("PeakDomesticHotWaterFlow", typeof(PeakDomesticHotWaterFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("Space", typeof(Space))]
+        [System.Xml.Serialization.XmlElementAttribute("SpaceBoundary", typeof(SpaceBoundary))]
+        [System.Xml.Serialization.XmlElementAttribute("StreetAddress", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -5082,7 +5081,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType3[] ItemsElementName {
             get {
@@ -5223,9 +5222,9 @@ namespace DemoSquared.Model {
         private string ifcGUIDField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Level", typeof(Level), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", typeof(PlanarGeometry), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Level", typeof(Level))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", typeof(PlanarGeometry))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -5325,7 +5324,7 @@ namespace DemoSquared.Model {
         private bool unitFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PolyLoop", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("PolyLoop")]
         public PolyLoop[] Items {
             get {
                 return this.itemsField;
@@ -5387,8 +5386,8 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BlowerDoorValue", typeof(BlowerDoorValue), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("BlowerDoorValue", typeof(BlowerDoorValue))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -5548,10 +5547,10 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CoefficientOfUtilization", typeof(CoefficientOfUtilization), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PhotometryOrientation", typeof(PhotometryOrientation), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CoefficientOfUtilization", typeof(CoefficientOfUtilization))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("PhotometryOrientation", typeof(PhotometryOrientation))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -5756,7 +5755,7 @@ namespace DemoSquared.Model {
         private CartesianPoint[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint")]
         public CartesianPoint[] Items {
             get {
                 return this.itemsField;
@@ -5880,30 +5879,30 @@ namespace DemoSquared.Model {
         private string ifcGUIDField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AirChangesPerHour", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("AirLoopEquipmentId", typeof(AirLoopEquipmentId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("AirLoopId", typeof(AirLoopId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Area", typeof(Area), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("EquipPowerPerArea", typeof(EquipPowerPerArea), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopEquipmentId", typeof(HydronicLoopEquipmentId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopId", typeof(HydronicLoopId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("InfiltrationFlow", typeof(InfiltrationFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IntEquipId", typeof(IntEquipId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LightPowerPerArea", typeof(LightPowerPerArea), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Lighting", typeof(Lighting), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LightingControl", typeof(LightingControl), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MeterId", typeof(MeterId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PeopleHeatGain", typeof(PeopleHeatGain), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PeopleNumber", typeof(PeopleNumber), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", typeof(PlanarGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SpaceBoundary", typeof(SpaceBoundary), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Temperature", typeof(Temperature), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("TypeCode", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Volume", typeof(Volume), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AirChangesPerHour", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("AirLoopEquipmentId", typeof(AirLoopEquipmentId))]
+        [System.Xml.Serialization.XmlElementAttribute("AirLoopId", typeof(AirLoopId))]
+        [System.Xml.Serialization.XmlElementAttribute("Area", typeof(Area))]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("EquipPowerPerArea", typeof(EquipPowerPerArea))]
+        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopEquipmentId", typeof(HydronicLoopEquipmentId))]
+        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopId", typeof(HydronicLoopId))]
+        [System.Xml.Serialization.XmlElementAttribute("InfiltrationFlow", typeof(InfiltrationFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("IntEquipId", typeof(IntEquipId))]
+        [System.Xml.Serialization.XmlElementAttribute("LightPowerPerArea", typeof(LightPowerPerArea))]
+        [System.Xml.Serialization.XmlElementAttribute("Lighting", typeof(Lighting))]
+        [System.Xml.Serialization.XmlElementAttribute("LightingControl", typeof(LightingControl))]
+        [System.Xml.Serialization.XmlElementAttribute("MeterId", typeof(MeterId))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("PeopleHeatGain", typeof(PeopleHeatGain))]
+        [System.Xml.Serialization.XmlElementAttribute("PeopleNumber", typeof(PeopleNumber))]
+        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", typeof(PlanarGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("SpaceBoundary", typeof(SpaceBoundary))]
+        [System.Xml.Serialization.XmlElementAttribute("Temperature", typeof(Temperature))]
+        [System.Xml.Serialization.XmlElementAttribute("TypeCode", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Volume", typeof(Volume))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -5915,7 +5914,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType2[] ItemsElementName {
             get {
@@ -6261,13 +6260,13 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint", typeof(CartesianPoint), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Illuminance", typeof(Illuminance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinLightFrac", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinPowerFrac", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PercentAreaDaylitControlled", typeof(PercentAreaDaylitControlled), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint", typeof(CartesianPoint))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("Illuminance", typeof(Illuminance))]
+        [System.Xml.Serialization.XmlElementAttribute("MinLightFrac", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("MinPowerFrac", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("PercentAreaDaylitControlled", typeof(PercentAreaDaylitControlled))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -6279,7 +6278,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType1[] ItemsElementName {
             get {
@@ -6708,7 +6707,7 @@ namespace DemoSquared.Model {
         private string oppositeIdRefField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry")]
         public PlanarGeometry Item {
             get {
                 return this.itemField;
@@ -7939,14 +7938,14 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AdjacentSpaceId", typeof(AdjacentSpaceId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FamilyName", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Opening", typeof(Opening), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", typeof(PlanarGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RectangularGeometry", typeof(RectangularGeometry), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AdjacentSpaceId", typeof(AdjacentSpaceId))]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("FamilyName", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Opening", typeof(Opening))]
+        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", typeof(PlanarGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("RectangularGeometry", typeof(RectangularGeometry))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -7958,7 +7957,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType6[] ItemsElementName {
             get {
@@ -8174,23 +8173,23 @@ namespace DemoSquared.Model {
         private string ifcGUIDField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GlazeConductivity", typeof(GlazeConductivity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("NaturalVentHiTemp", typeof(NaturalVentHiTemp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("NaturalVentLoTemp", typeof(NaturalVentLoTemp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("NaturalVentOccDep", typeof(bool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", typeof(PlanarGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RectangularGeometry", typeof(RectangularGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Setback", typeof(Setback), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShadeControl", typeof(ShadeControl), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShadingCoeff", typeof(ShadingCoeff), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SolarHeatGainCoeff", typeof(SolarHeatGainCoeff), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("U-value", typeof(Uvalue), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance))]
+        [System.Xml.Serialization.XmlElementAttribute("GlazeConductivity", typeof(GlazeConductivity))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("NaturalVentHiTemp", typeof(NaturalVentHiTemp))]
+        [System.Xml.Serialization.XmlElementAttribute("NaturalVentLoTemp", typeof(NaturalVentLoTemp))]
+        [System.Xml.Serialization.XmlElementAttribute("NaturalVentOccDep", typeof(bool))]
+        [System.Xml.Serialization.XmlElementAttribute("PlanarGeometry", typeof(PlanarGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("RectangularGeometry", typeof(RectangularGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance))]
+        [System.Xml.Serialization.XmlElementAttribute("Setback", typeof(Setback))]
+        [System.Xml.Serialization.XmlElementAttribute("ShadeControl", typeof(ShadeControl))]
+        [System.Xml.Serialization.XmlElementAttribute("ShadingCoeff", typeof(ShadingCoeff))]
+        [System.Xml.Serialization.XmlElementAttribute("SolarHeatGainCoeff", typeof(SolarHeatGainCoeff))]
+        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance))]
+        [System.Xml.Serialization.XmlElementAttribute("U-value", typeof(Uvalue))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -8202,7 +8201,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType5[] ItemsElementName {
             get {
@@ -8598,12 +8597,12 @@ namespace DemoSquared.Model {
         private bool unitFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Azimuth", typeof(double), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint", typeof(CartesianPoint), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Height", typeof(Height), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PolyLoop", typeof(PolyLoop), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Tilt", typeof(double), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Width", typeof(Width), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Azimuth", typeof(double))]
+        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint", typeof(CartesianPoint))]
+        [System.Xml.Serialization.XmlElementAttribute("Height", typeof(Height))]
+        [System.Xml.Serialization.XmlElementAttribute("PolyLoop", typeof(PolyLoop))]
+        [System.Xml.Serialization.XmlElementAttribute("Tilt", typeof(double))]
+        [System.Xml.Serialization.XmlElementAttribute("Width", typeof(Width))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -8615,7 +8614,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType4[] ItemsElementName {
             get {
@@ -8938,12 +8937,12 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AirTemperature", typeof(AirTemperature), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Glare", typeof(Glare), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HorizontalSolar", typeof(HorizontalSolar), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShadeSchedule", typeof(ShadeSchedule), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SolarOnOpening", typeof(SolarOnOpening), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ZoneCoolingLoad", typeof(ZoneCoolingLoad), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AirTemperature", typeof(AirTemperature))]
+        [System.Xml.Serialization.XmlElementAttribute("Glare", typeof(Glare))]
+        [System.Xml.Serialization.XmlElementAttribute("HorizontalSolar", typeof(HorizontalSolar))]
+        [System.Xml.Serialization.XmlElementAttribute("ShadeSchedule", typeof(ShadeSchedule))]
+        [System.Xml.Serialization.XmlElementAttribute("SolarOnOpening", typeof(SolarOnOpening))]
+        [System.Xml.Serialization.XmlElementAttribute("ZoneCoolingLoad", typeof(ZoneCoolingLoad))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -9639,9 +9638,9 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -9751,11 +9750,11 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BiomassDensity", typeof(BiomassDensity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WaterRate", typeof(WaterRate), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("BiomassDensity", typeof(BiomassDensity))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("WaterRate", typeof(WaterRate))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -9971,9 +9970,9 @@ namespace DemoSquared.Model {
         private ItemsChoiceType7[] itemsElementNameField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BeginDate", typeof(System.DateTime), DataType="date", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("EndDate", typeof(System.DateTime), DataType="date", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HolidaysModeled", typeof(HolidaysModeled), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("BeginDate", typeof(System.DateTime), DataType="date")]
+        [System.Xml.Serialization.XmlElementAttribute("EndDate", typeof(System.DateTime), DataType="date")]
+        [System.Xml.Serialization.XmlElementAttribute("HolidaysModeled", typeof(HolidaysModeled))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -9985,7 +9984,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType7[] ItemsElementName {
             get {
@@ -10148,21 +10147,21 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Absorptance", typeof(Absorptance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Albedo", typeof(Albedo), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ExtEquipId", typeof(ExtEquipId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FireFace", typeof(FireFace), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LayerId", typeof(LayerId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LoadCalcInputParameters", typeof(LoadCalcInputParameters), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PercentExisting", typeof(PercentExisting), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Roughness", typeof(Roughness), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("U-value", typeof(Uvalue), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Absorptance", typeof(Absorptance))]
+        [System.Xml.Serialization.XmlElementAttribute("Albedo", typeof(Albedo))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance))]
+        [System.Xml.Serialization.XmlElementAttribute("ExtEquipId", typeof(ExtEquipId))]
+        [System.Xml.Serialization.XmlElementAttribute("FireFace", typeof(FireFace))]
+        [System.Xml.Serialization.XmlElementAttribute("LayerId", typeof(LayerId))]
+        [System.Xml.Serialization.XmlElementAttribute("LoadCalcInputParameters", typeof(LoadCalcInputParameters))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("PercentExisting", typeof(PercentExisting))]
+        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance))]
+        [System.Xml.Serialization.XmlElementAttribute("Roughness", typeof(Roughness))]
+        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance))]
+        [System.Xml.Serialization.XmlElementAttribute("U-value", typeof(Uvalue))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -10174,7 +10173,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType10[] ItemsElementName {
             get {
@@ -10347,9 +10346,9 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Absorptance", typeof(Absorptance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Absorptance", typeof(Absorptance))]
+        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance))]
+        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -10395,10 +10394,10 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CLTDParameters", typeof(CLTDParameters), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FloorSlabHeatLossCoefficient", typeof(FloorSlabHeatLossCoefficient), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ManualJ8Parameters", typeof(ManualJ8Parameters), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RTSParameters", typeof(RTSParameters), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CLTDParameters", typeof(CLTDParameters))]
+        [System.Xml.Serialization.XmlElementAttribute("FloorSlabHeatLossCoefficient", typeof(FloorSlabHeatLossCoefficient))]
+        [System.Xml.Serialization.XmlElementAttribute("ManualJ8Parameters", typeof(ManualJ8Parameters))]
+        [System.Xml.Serialization.XmlElementAttribute("RTSParameters", typeof(RTSParameters))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -11171,7 +11170,7 @@ namespace DemoSquared.Model {
         private bool wallCTSTypeFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HOutside", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("HOutside")]
         public HOutside Item {
             get {
                 return this.itemField;
@@ -11675,9 +11674,9 @@ namespace DemoSquared.Model {
         private string scheduleTypeLimitsIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ScheduleValue", typeof(ScheduleValue), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ScheduleValue", typeof(ScheduleValue))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -11689,7 +11688,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType21[] ItemsElementName {
             get {
@@ -11911,10 +11910,10 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CreatedBy", typeof(CreatedBy), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ModifiedBy", typeof(ModifiedBy), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PersonInfo", typeof(PersonInfo), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ProgramInfo", typeof(ProgramInfo), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CreatedBy", typeof(CreatedBy))]
+        [System.Xml.Serialization.XmlElementAttribute("ModifiedBy", typeof(ModifiedBy))]
+        [System.Xml.Serialization.XmlElementAttribute("PersonInfo", typeof(PersonInfo))]
+        [System.Xml.Serialization.XmlElementAttribute("ProgramInfo", typeof(ProgramInfo))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -11943,7 +11942,7 @@ namespace DemoSquared.Model {
         private System.DateTime dateField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CADModelId", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CADModelId")]
         public CADModelId[] Items {
             get {
                 return this.itemsField;
@@ -12088,19 +12087,19 @@ namespace DemoSquared.Model {
         private string idField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Address1", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Address2", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("City", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CompanyName", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Country", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Email1Address", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FirstName", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LastName", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MiddleName", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PhoneNumber", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("State", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WebPage", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ZipCode", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Address1", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Address2", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("City", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("CompanyName", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Country", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Email1Address", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("FirstName", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("LastName", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("MiddleName", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("PhoneNumber", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("State", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("WebPage", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ZipCode", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public string[] Items {
             get {
@@ -12112,7 +12111,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType38[] ItemsElementName {
             get {
@@ -12197,11 +12196,11 @@ namespace DemoSquared.Model {
         private string idField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CompanyName", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Platform", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ProductName", typeof(ProductName), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ProjectEntity", typeof(ProjectEntity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Version", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CompanyName", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Platform", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ProductName", typeof(ProductName))]
+        [System.Xml.Serialization.XmlElementAttribute("ProjectEntity", typeof(ProjectEntity))]
+        [System.Xml.Serialization.XmlElementAttribute("Version", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -12213,7 +12212,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType37[] ItemsElementName {
             get {
@@ -12273,9 +12272,9 @@ namespace DemoSquared.Model {
         private ItemsChoiceType36[] itemsElementNameField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("FileName", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GUID", typeof(GUID), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("URI", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("FileName", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("GUID", typeof(GUID))]
+        [System.Xml.Serialization.XmlElementAttribute("URI", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -12287,7 +12286,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType36[] ItemsElementName {
             get {
@@ -12424,30 +12423,30 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Age", typeof(Age), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CyclesPerWeek", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Efficiency", typeof(Efficiency), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ElecLoad", typeof(ElecLoad), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Energy", typeof(Energy), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FuelLoad", typeof(FuelLoad), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IndoorAirQuality", typeof(IndoorAirQuality), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LatentLoad", typeof(LatentLoad), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Model", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Performance", typeof(Performance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Power", typeof(Power), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RatedFlow", typeof(RatedFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WasteWaterHREff", typeof(WasteWaterHREff), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WaterUsePerCycle", typeof(WaterUsePerCycle), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Weight", typeof(Weight), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WindSpeed", typeof(WindSpeed), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Age", typeof(Age))]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("CyclesPerWeek", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Efficiency", typeof(Efficiency))]
+        [System.Xml.Serialization.XmlElementAttribute("ElecLoad", typeof(ElecLoad))]
+        [System.Xml.Serialization.XmlElementAttribute("Energy", typeof(Energy))]
+        [System.Xml.Serialization.XmlElementAttribute("FuelLoad", typeof(FuelLoad))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("IndoorAirQuality", typeof(IndoorAirQuality))]
+        [System.Xml.Serialization.XmlElementAttribute("LatentLoad", typeof(LatentLoad))]
+        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Model", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Performance", typeof(Performance))]
+        [System.Xml.Serialization.XmlElementAttribute("Power", typeof(Power))]
+        [System.Xml.Serialization.XmlElementAttribute("RatedFlow", typeof(RatedFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("WasteWaterHREff", typeof(WasteWaterHREff))]
+        [System.Xml.Serialization.XmlElementAttribute("WaterUsePerCycle", typeof(WaterUsePerCycle))]
+        [System.Xml.Serialization.XmlElementAttribute("Weight", typeof(Weight))]
+        [System.Xml.Serialization.XmlElementAttribute("WindSpeed", typeof(WindSpeed))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -12459,7 +12458,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType32[] ItemsElementName {
             get {
@@ -12726,9 +12725,9 @@ namespace DemoSquared.Model {
         private string scheduleIdRefField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("EmissionRate", typeof(EmissionRate), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HighLimit", typeof(HighLimit), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SinkRate", typeof(SinkRate), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("EmissionRate", typeof(EmissionRate))]
+        [System.Xml.Serialization.XmlElementAttribute("HighLimit", typeof(HighLimit))]
+        [System.Xml.Serialization.XmlElementAttribute("SinkRate", typeof(SinkRate))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -13335,14 +13334,14 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DesignCoolT", typeof(DesignCoolT), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FlowControl", typeof(FlowControl), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopEquipment", typeof(HydronicLoopEquipment), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("TemperatureControl", typeof(TemperatureControl), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("DesignCoolT", typeof(DesignCoolT))]
+        [System.Xml.Serialization.XmlElementAttribute("FlowControl", typeof(FlowControl))]
+        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopEquipment", typeof(HydronicLoopEquipment))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("TemperatureControl", typeof(TemperatureControl))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -13354,7 +13353,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType30[] ItemsElementName {
             get {
@@ -13508,10 +13507,10 @@ namespace DemoSquared.Model {
         private string processScheduleIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("DesignFlow", typeof(DesignFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MaximumFlow", typeof(MaximumFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinimumFlow", typeof(MinimumFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RecircFlow", typeof(RecircFlow), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("DesignFlow", typeof(DesignFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("MaximumFlow", typeof(MaximumFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("MinimumFlow", typeof(MinimumFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("RecircFlow", typeof(RecircFlow))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -13706,33 +13705,33 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Age", typeof(Age), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Capacity", typeof(Capacity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Control", typeof(Control), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DeltaP", typeof(DeltaP), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DeltaT", typeof(DeltaT), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Efficiency", typeof(Efficiency), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Energy", typeof(Energy), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopId", typeof(HydronicLoopId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Life", typeof(Life), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinFlow", typeof(MinFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Model", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("OperationSchedule", typeof(OperationSchedule), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Performance", typeof(Performance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Power", typeof(Power), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RatedFlow", typeof(RatedFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RefrigerantType", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ResetTemperature", typeof(ResetTemperature), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Temp", typeof(Temp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Weight", typeof(Weight), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Age", typeof(Age))]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("Capacity", typeof(Capacity))]
+        [System.Xml.Serialization.XmlElementAttribute("Control", typeof(Control))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("DeltaP", typeof(DeltaP))]
+        [System.Xml.Serialization.XmlElementAttribute("DeltaT", typeof(DeltaT))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Efficiency", typeof(Efficiency))]
+        [System.Xml.Serialization.XmlElementAttribute("Energy", typeof(Energy))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopId", typeof(HydronicLoopId))]
+        [System.Xml.Serialization.XmlElementAttribute("Life", typeof(Life))]
+        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("MinFlow", typeof(MinFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("Model", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("OperationSchedule", typeof(OperationSchedule))]
+        [System.Xml.Serialization.XmlElementAttribute("Performance", typeof(Performance))]
+        [System.Xml.Serialization.XmlElementAttribute("Power", typeof(Power))]
+        [System.Xml.Serialization.XmlElementAttribute("RatedFlow", typeof(RatedFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("RefrigerantType", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ResetTemperature", typeof(ResetTemperature))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("Temp", typeof(Temp))]
+        [System.Xml.Serialization.XmlElementAttribute("Weight", typeof(Weight))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -13744,7 +13743,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType29[] ItemsElementName {
             get {
@@ -14044,30 +14043,30 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Age", typeof(Age), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CyclesPerWeek", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Efficiency", typeof(Efficiency), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ElecLoad", typeof(ElecLoad), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Energy", typeof(Energy), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FuelLoad", typeof(FuelLoad), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HeatRejectedtoSpace", typeof(HeatRejectedtoSpace), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IndoorAirQuality", typeof(IndoorAirQuality), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LatentLoad", typeof(LatentLoad), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Model", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Performance", typeof(Performance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Power", typeof(Power), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RatedFlow", typeof(RatedFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WasteWaterHREff", typeof(WasteWaterHREff), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WaterUsePerCycle", typeof(WaterUsePerCycle), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Weight", typeof(Weight), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Age", typeof(Age))]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("CyclesPerWeek", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Efficiency", typeof(Efficiency))]
+        [System.Xml.Serialization.XmlElementAttribute("ElecLoad", typeof(ElecLoad))]
+        [System.Xml.Serialization.XmlElementAttribute("Energy", typeof(Energy))]
+        [System.Xml.Serialization.XmlElementAttribute("FuelLoad", typeof(FuelLoad))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("HeatRejectedtoSpace", typeof(HeatRejectedtoSpace))]
+        [System.Xml.Serialization.XmlElementAttribute("IndoorAirQuality", typeof(IndoorAirQuality))]
+        [System.Xml.Serialization.XmlElementAttribute("LatentLoad", typeof(LatentLoad))]
+        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Model", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Performance", typeof(Performance))]
+        [System.Xml.Serialization.XmlElementAttribute("Power", typeof(Power))]
+        [System.Xml.Serialization.XmlElementAttribute("RatedFlow", typeof(RatedFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("WasteWaterHREff", typeof(WasteWaterHREff))]
+        [System.Xml.Serialization.XmlElementAttribute("WaterUsePerCycle", typeof(WaterUsePerCycle))]
+        [System.Xml.Serialization.XmlElementAttribute("Weight", typeof(Weight))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -14079,7 +14078,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType31[] ItemsElementName {
             get {
@@ -14450,12 +14449,12 @@ namespace DemoSquared.Model {
         private string dOELibIdRefField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HOutside", typeof(HOutside), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("InsideAirFilmResistance", typeof(InsideAirFilmResistance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MaterialId", typeof(MaterialId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("HOutside", typeof(HOutside))]
+        [System.Xml.Serialization.XmlElementAttribute("InsideAirFilmResistance", typeof(InsideAirFilmResistance))]
+        [System.Xml.Serialization.XmlElementAttribute("MaterialId", typeof(MaterialId))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -14467,7 +14466,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType11[] ItemsElementName {
             get {
@@ -14642,20 +14641,20 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Ballast", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CoefficientOfUtilization", typeof(CoefficientOfUtilization), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Dimensions", typeof(Dimensions), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("InputWatts", typeof(InputWatts), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Lamp", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("LumensPerLamp", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Luminaire", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("NumberOfLamps", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Photometry", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Ballast", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("CoefficientOfUtilization", typeof(CoefficientOfUtilization))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("Dimensions", typeof(Dimensions))]
+        [System.Xml.Serialization.XmlElementAttribute("GeneralGeometry", typeof(GeneralGeometry))]
+        [System.Xml.Serialization.XmlElementAttribute("InputWatts", typeof(InputWatts))]
+        [System.Xml.Serialization.XmlElementAttribute("Lamp", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("LumensPerLamp", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("Luminaire", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Manufacturer", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("NumberOfLamps", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("Photometry", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ShellGeometry", typeof(ShellGeometry))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -14667,7 +14666,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType9[] ItemsElementName {
             get {
@@ -14713,9 +14712,9 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Height", typeof(Height), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Length", typeof(Length), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Width", typeof(Width), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Height", typeof(Height))]
+        [System.Xml.Serialization.XmlElementAttribute("Length", typeof(Length))]
+        [System.Xml.Serialization.XmlElementAttribute("Width", typeof(Width))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -14878,28 +14877,28 @@ namespace DemoSquared.Model {
         private string dOELibIdRefField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Absorptance", typeof(Absorptance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Albedo", typeof(Albedo), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CADMaterialId", typeof(CADMaterialId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Density", typeof(Density), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Fire", typeof(Fire), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ImageTexture", typeof(ImageTexture), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IndoorAirQuality", typeof(IndoorAirQuality), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Permeance", typeof(Permeance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Porosity", typeof(Porosity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("R-value", typeof(Rvalue), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("RecycledContent", typeof(RecycledContent), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Roughness", typeof(Roughness), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SpecificHeat", typeof(SpecificHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Absorptance", typeof(Absorptance))]
+        [System.Xml.Serialization.XmlElementAttribute("Albedo", typeof(Albedo))]
+        [System.Xml.Serialization.XmlElementAttribute("CADMaterialId", typeof(CADMaterialId))]
+        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("Density", typeof(Density))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance))]
+        [System.Xml.Serialization.XmlElementAttribute("Fire", typeof(Fire))]
+        [System.Xml.Serialization.XmlElementAttribute("ImageTexture", typeof(ImageTexture))]
+        [System.Xml.Serialization.XmlElementAttribute("IndoorAirQuality", typeof(IndoorAirQuality))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Permeance", typeof(Permeance))]
+        [System.Xml.Serialization.XmlElementAttribute("Porosity", typeof(Porosity))]
+        [System.Xml.Serialization.XmlElementAttribute("R-value", typeof(Rvalue))]
+        [System.Xml.Serialization.XmlElementAttribute("RecycledContent", typeof(RecycledContent))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance))]
+        [System.Xml.Serialization.XmlElementAttribute("Roughness", typeof(Roughness))]
+        [System.Xml.Serialization.XmlElementAttribute("SpecificHeat", typeof(SpecificHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness))]
+        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -14911,7 +14910,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType12[] ItemsElementName {
             get {
@@ -15052,10 +15051,10 @@ namespace DemoSquared.Model {
         private object itemField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Density", typeof(Density), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SpecificHeat", typeof(SpecificHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity))]
+        [System.Xml.Serialization.XmlElementAttribute("Density", typeof(Density))]
+        [System.Xml.Serialization.XmlElementAttribute("SpecificHeat", typeof(SpecificHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness))]
         public object Item {
             get {
                 return this.itemField;
@@ -15464,10 +15463,10 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAnyElementAttribute(Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("UtilityRate", typeof(UtilityRate), Order=0)]
+        [System.Xml.Serialization.XmlAnyElementAttribute()]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("UtilityRate", typeof(UtilityRate))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -15479,7 +15478,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType34[] ItemsElementName {
             get {
@@ -15592,12 +15591,12 @@ namespace DemoSquared.Model {
         private string timeIncrementField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint", typeof(CartesianPoint), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ObjectId", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Value", typeof(decimal), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("CartesianPoint", typeof(CartesianPoint))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("ObjectId", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Value", typeof(decimal))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -15609,7 +15608,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType35[] ItemsElementName {
             get {
@@ -15865,9 +15864,9 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("YearSchedule", typeof(YearSchedule), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("YearSchedule", typeof(YearSchedule))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -15879,7 +15878,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType19[] ItemsElementName {
             get {
@@ -15942,11 +15941,11 @@ namespace DemoSquared.Model {
         private string scheduleTypeLimitsIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("BeginDate", typeof(System.DateTime), DataType="date", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("EndDate", typeof(System.DateTime), DataType="date", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WeekScheduleId", typeof(WeekScheduleId), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("BeginDate", typeof(System.DateTime), DataType="date")]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("EndDate", typeof(System.DateTime), DataType="date")]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("WeekScheduleId", typeof(WeekScheduleId))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -15958,7 +15957,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType18[] ItemsElementName {
             get {
@@ -16071,7 +16070,7 @@ namespace DemoSquared.Model {
         private bool timestepFieldSpecified;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ConvergenceLimits", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("ConvergenceLimits")]
         public ConvergenceLimits Item {
             get {
                 return this.itemField;
@@ -16208,51 +16207,51 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CDD", typeof(CDD), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("City", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Country", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDDBCool", typeof(DDDBCool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDDBHeat", typeof(DDDBHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDDBRangeCool", typeof(DDDBRangeCool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDDBRangeHeat", typeof(DDDBRangeHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDDayCool", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDDayHeat", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDDaylightCool", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDDaylightHeat", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDGroundTCool", typeof(DDGroundTCool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDGroundTHeat", typeof(DDGroundTHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDHiHrCool", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDHiHrHeat", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDLoHrCool", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDLoHrHeat", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDMonthCool", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDMonthHeat", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDPressureCool", typeof(DDPressureCool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDPressureHeat", typeof(DDPressureHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDRainCool", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDRainHeat", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDSkyClearnessCool", typeof(DDSkyClearnessCool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDSkyClearnessHeat", typeof(DDSkyClearnessHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDSnowCool", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDSnowHeat", typeof(string), DataType="integer", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDWBCool", typeof(DDWBCool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDWBHeat", typeof(DDWBHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDWindDirCool", typeof(DDWindDirCool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDWindDirHeat", typeof(DDWindDirHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDWindSpeedCool", typeof(DDWindSpeedCool), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DDWindSpeedHeat", typeof(DDWindSpeedHeat), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("GroundTemp", typeof(GroundTemp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HDD", typeof(HDD), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Location", typeof(Location), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("StateOrProvince", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WFTDPressure", typeof(WFTDPressure), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WFTDRelHumidity", typeof(WFTDRelHumidity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WFTDTemp", typeof(WFTDTemp), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WFTDWindDir", typeof(WFTDWindDir), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("WFTDWindSpeed", typeof(WFTDWindSpeed), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CDD", typeof(CDD))]
+        [System.Xml.Serialization.XmlElementAttribute("City", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Country", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("DDDBCool", typeof(DDDBCool))]
+        [System.Xml.Serialization.XmlElementAttribute("DDDBHeat", typeof(DDDBHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("DDDBRangeCool", typeof(DDDBRangeCool))]
+        [System.Xml.Serialization.XmlElementAttribute("DDDBRangeHeat", typeof(DDDBRangeHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("DDDayCool", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDDayHeat", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDDaylightCool", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDDaylightHeat", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDGroundTCool", typeof(DDGroundTCool))]
+        [System.Xml.Serialization.XmlElementAttribute("DDGroundTHeat", typeof(DDGroundTHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("DDHiHrCool", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("DDHiHrHeat", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("DDLoHrCool", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("DDLoHrHeat", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("DDMonthCool", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDMonthHeat", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDPressureCool", typeof(DDPressureCool))]
+        [System.Xml.Serialization.XmlElementAttribute("DDPressureHeat", typeof(DDPressureHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("DDRainCool", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDRainHeat", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDSkyClearnessCool", typeof(DDSkyClearnessCool))]
+        [System.Xml.Serialization.XmlElementAttribute("DDSkyClearnessHeat", typeof(DDSkyClearnessHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("DDSnowCool", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDSnowHeat", typeof(string), DataType="integer")]
+        [System.Xml.Serialization.XmlElementAttribute("DDWBCool", typeof(DDWBCool))]
+        [System.Xml.Serialization.XmlElementAttribute("DDWBHeat", typeof(DDWBHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("DDWindDirCool", typeof(DDWindDirCool))]
+        [System.Xml.Serialization.XmlElementAttribute("DDWindDirHeat", typeof(DDWindDirHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("DDWindSpeedCool", typeof(DDWindSpeedCool))]
+        [System.Xml.Serialization.XmlElementAttribute("DDWindSpeedHeat", typeof(DDWindSpeedHeat))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("GroundTemp", typeof(GroundTemp))]
+        [System.Xml.Serialization.XmlElementAttribute("HDD", typeof(HDD))]
+        [System.Xml.Serialization.XmlElementAttribute("Location", typeof(Location))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("StateOrProvince", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("WFTDPressure", typeof(WFTDPressure))]
+        [System.Xml.Serialization.XmlElementAttribute("WFTDRelHumidity", typeof(WFTDRelHumidity))]
+        [System.Xml.Serialization.XmlElementAttribute("WFTDTemp", typeof(WFTDTemp))]
+        [System.Xml.Serialization.XmlElementAttribute("WFTDWindDir", typeof(WFTDWindDir))]
+        [System.Xml.Serialization.XmlElementAttribute("WFTDWindSpeed", typeof(WFTDWindSpeed))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -16264,7 +16263,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType33[] ItemsElementName {
             get {
@@ -16310,8 +16309,8 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("CDDValue", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Temperature", typeof(Temperature), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("CDDValue", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("Temperature", typeof(Temperature))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -17099,8 +17098,8 @@ namespace DemoSquared.Model {
         private object[] itemsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("HDDValue", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Temperature", typeof(Temperature), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("HDDValue", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("Temperature", typeof(Temperature))]
         public object[] Items {
             get {
                 return this.itemsField;
@@ -17453,9 +17452,9 @@ namespace DemoSquared.Model {
         private string scheduleTypeLimitsIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Day", typeof(Day), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Day", typeof(Day))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -17467,7 +17466,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType20[] ItemsElementName {
             get {
@@ -17649,20 +17648,20 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Blind", typeof(Blind), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ExtEquipId", typeof(ExtEquipId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Frame", typeof(Frame), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Gap", typeof(Gap), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Glaze", typeof(Glaze), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ShadingCoeff", typeof(ShadingCoeff), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SolarHeatGainCoeff", typeof(SolarHeatGainCoeff), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("U-value", typeof(Uvalue), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Blind", typeof(Blind))]
+        [System.Xml.Serialization.XmlElementAttribute("Cost", typeof(Cost))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance))]
+        [System.Xml.Serialization.XmlElementAttribute("ExtEquipId", typeof(ExtEquipId))]
+        [System.Xml.Serialization.XmlElementAttribute("Frame", typeof(Frame))]
+        [System.Xml.Serialization.XmlElementAttribute("Gap", typeof(Gap))]
+        [System.Xml.Serialization.XmlElementAttribute("Glaze", typeof(Glaze))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance))]
+        [System.Xml.Serialization.XmlElementAttribute("ShadingCoeff", typeof(ShadingCoeff))]
+        [System.Xml.Serialization.XmlElementAttribute("SolarHeatGainCoeff", typeof(SolarHeatGainCoeff))]
+        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance))]
+        [System.Xml.Serialization.XmlElementAttribute("U-value", typeof(Uvalue))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -17674,7 +17673,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType17[] ItemsElementName {
             get {
@@ -17735,13 +17734,13 @@ namespace DemoSquared.Model {
         private string idField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance))]
+        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness))]
+        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -17753,7 +17752,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType13[] ItemsElementName {
             get {
@@ -17824,9 +17823,9 @@ namespace DemoSquared.Model {
         private string dOELibIdRefField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Width", typeof(Width), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Width", typeof(Width))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -17838,7 +17837,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType14[] ItemsElementName {
             get {
@@ -17941,17 +17940,17 @@ namespace DemoSquared.Model {
         private string dOELibIdRefField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ConductivityFofT", typeof(ConductivityFofT), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Density", typeof(Density), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DensityFofT", typeof(DensityFofT), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PrandtlNumber", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("PrandtlNumberFofT", typeof(PrandtlNumberFofT), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Viscosity", typeof(Viscosity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("ViscosityFofT", typeof(ViscosityFofT), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity))]
+        [System.Xml.Serialization.XmlElementAttribute("ConductivityFofT", typeof(ConductivityFofT))]
+        [System.Xml.Serialization.XmlElementAttribute("Density", typeof(Density))]
+        [System.Xml.Serialization.XmlElementAttribute("DensityFofT", typeof(DensityFofT))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("PrandtlNumber", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("PrandtlNumberFofT", typeof(PrandtlNumberFofT))]
+        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness))]
+        [System.Xml.Serialization.XmlElementAttribute("Viscosity", typeof(Viscosity))]
+        [System.Xml.Serialization.XmlElementAttribute("ViscosityFofT", typeof(ViscosityFofT))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -17963,7 +17962,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType15[] ItemsElementName {
             get {
@@ -18336,14 +18335,14 @@ namespace DemoSquared.Model {
         private string dOELibIdRefField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Conductivity", typeof(Conductivity))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Emittance", typeof(Emittance))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Reference", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Reflectance", typeof(Reflectance))]
+        [System.Xml.Serialization.XmlElementAttribute("Thickness", typeof(Thickness))]
+        [System.Xml.Serialization.XmlElementAttribute("Transmittance", typeof(Transmittance))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -18355,7 +18354,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType16[] ItemsElementName {
             get {
@@ -18502,30 +18501,30 @@ namespace DemoSquared.Model {
         private string programIdField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("AirChangesPerHour", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("AirLoopId", typeof(AirLoopId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("BaseboardHeatingCapacity", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("BaseboardHeatingType", typeof(BaseboardHeatingType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("CoolingSizingFactor", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DesignCoolT", typeof(DesignCoolT), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("DesignHeatT", typeof(DesignHeatT), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Flow", typeof(Flow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FlowPerArea", typeof(FlowPerArea), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("FlowPerPerson", typeof(FlowPerPerson), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HeatingSizingFactor", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopId", typeof(HydronicLoopId), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("IndoorAirQuality", typeof(IndoorAirQuality), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MaxOAFlowPerZone", typeof(MaxOAFlowPerZone), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinOAFlowPerZone", typeof(MinOAFlowPerZone), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("MinimumOutdoorAirControlType", typeof(MinimumOutdoorAirControlType), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("OAFlowPerArea", typeof(OAFlowPerArea), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("OAFlowPerPerson", typeof(OAFlowPerPerson), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("OAFlowPerZone", typeof(OAFlowPerZone), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("SecondaryFlow", typeof(SecondaryFlow), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("TypeCode", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("AirChangesPerHour", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("AirLoopId", typeof(AirLoopId))]
+        [System.Xml.Serialization.XmlElementAttribute("BaseboardHeatingCapacity", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("BaseboardHeatingType", typeof(BaseboardHeatingType))]
+        [System.Xml.Serialization.XmlElementAttribute("CADObjectId", typeof(CADObjectId))]
+        [System.Xml.Serialization.XmlElementAttribute("CoolingSizingFactor", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("DesignCoolT", typeof(DesignCoolT))]
+        [System.Xml.Serialization.XmlElementAttribute("DesignHeatT", typeof(DesignHeatT))]
+        [System.Xml.Serialization.XmlElementAttribute("Flow", typeof(Flow))]
+        [System.Xml.Serialization.XmlElementAttribute("FlowPerArea", typeof(FlowPerArea))]
+        [System.Xml.Serialization.XmlElementAttribute("FlowPerPerson", typeof(FlowPerPerson))]
+        [System.Xml.Serialization.XmlElementAttribute("HeatingSizingFactor", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("HydronicLoopId", typeof(HydronicLoopId))]
+        [System.Xml.Serialization.XmlElementAttribute("IndoorAirQuality", typeof(IndoorAirQuality))]
+        [System.Xml.Serialization.XmlElementAttribute("MaxOAFlowPerZone", typeof(MaxOAFlowPerZone))]
+        [System.Xml.Serialization.XmlElementAttribute("MinOAFlowPerZone", typeof(MinOAFlowPerZone))]
+        [System.Xml.Serialization.XmlElementAttribute("MinimumOutdoorAirControlType", typeof(MinimumOutdoorAirControlType))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("OAFlowPerArea", typeof(OAFlowPerArea))]
+        [System.Xml.Serialization.XmlElementAttribute("OAFlowPerPerson", typeof(OAFlowPerPerson))]
+        [System.Xml.Serialization.XmlElementAttribute("OAFlowPerZone", typeof(OAFlowPerZone))]
+        [System.Xml.Serialization.XmlElementAttribute("SecondaryFlow", typeof(SecondaryFlow))]
+        [System.Xml.Serialization.XmlElementAttribute("TypeCode", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public object[] Items {
             get {
@@ -18537,7 +18536,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType22[] ItemsElementName {
             get {
@@ -19515,8 +19514,8 @@ namespace DemoSquared.Model {
         private scheduleTypeLimitsEnum typeField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("LowerLimitValue", typeof(decimal), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("UpperLimitValue", typeof(decimal), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("LowerLimitValue", typeof(decimal))]
+        [System.Xml.Serialization.XmlElementAttribute("UpperLimitValue", typeof(decimal))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public decimal[] Items {
             get {
@@ -19528,7 +19527,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType39[] ItemsElementName {
             get {
@@ -19667,8 +19666,8 @@ namespace DemoSquared.Model {
         private string dataTypeField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public string[] Items {
             get {
@@ -19680,7 +19679,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType40[] ItemsElementName {
             get {
@@ -19745,8 +19744,8 @@ namespace DemoSquared.Model {
         private string dataTypeField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string), Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string), Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("Description", typeof(string))]
+        [System.Xml.Serialization.XmlElementAttribute("Name", typeof(string))]
         [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
         public string[] Items {
             get {
@@ -19758,7 +19757,7 @@ namespace DemoSquared.Model {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName", Order=1)]
+        [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
         [System.Xml.Serialization.XmlIgnoreAttribute()]
         public ItemsChoiceType41[] ItemsElementName {
             get {
