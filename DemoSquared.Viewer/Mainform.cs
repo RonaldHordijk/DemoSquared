@@ -18,6 +18,7 @@ namespace DemoSquared.Viewer
   {
     private gbXML _building;
     private DisplayModel _displayModel;
+    private ViewPort _viewPort;
 
     public MainForm()
     {
@@ -47,6 +48,10 @@ namespace DemoSquared.Viewer
         clbSpaces.Items.Add(space);
       }
 
+      var (minWorld, maxWorld) = DisplayModelQuery.GetModelBounds(_displayModel);
+
+      _viewPort = new ViewPort(pbMain.Width, pbMain.Height, minWorld, maxWorld);
+
       var bmp = MakeImage(pbMain.Width, pbMain.Height);
       pbMain.Image = bmp;
     }
@@ -69,7 +74,7 @@ namespace DemoSquared.Viewer
 
         foreach (var polygon in space.Polygons)
         {
-          var points = polygon.Points.Select(p => new PointF((float)p.X + 100, (float)p.Y + 100)).ToArray();
+          var points = polygon.Points.Select(_viewPort.WorldToScreen).ToArray();
           g.DrawPolygon(pen, points);
 
           if (selected)
@@ -94,6 +99,8 @@ namespace DemoSquared.Viewer
 
     private void MainForm_Resize(object sender, EventArgs e)
     {
+      _viewPort.ResizeScreen(pbMain.Width, pbMain.Height);
+
       var bmp = MakeImage(pbMain.Width, pbMain.Height);
       pbMain.Image = bmp;
     }
