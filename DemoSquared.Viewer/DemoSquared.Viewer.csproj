@@ -88,6 +88,10 @@
       <Project>{33D6C7D8-C246-4FC0-BFB3-9C1B1B18675F}</Project>
       <Name>DemoSquared.Utils</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DemoSquared.ViewModel\DemoSquared.ViewModel.csproj">
+      <Project>{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}</Project>
+      <Name>DemoSquared.ViewModel</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

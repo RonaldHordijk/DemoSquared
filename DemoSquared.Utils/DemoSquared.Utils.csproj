@@ -41,13 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Converter.cs" />
     <Compile Include="Loader.cs" />
+    <Compile Include="ModelQuery.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DemoSquared.Model\DemoSquared.Model.csproj">
       <Project>{5857c45f-cb88-407c-a10a-97a3975dfc52}</Project>
       <Name>DemoSquared.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoSquared.ViewModel\DemoSquared.ViewModel.csproj">
+      <Project>{ea38af8b-4e5b-4a1e-82eb-659cb8fedbc1}</Project>
+      <Name>DemoSquared.ViewModel</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
