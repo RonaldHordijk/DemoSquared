@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSquared.Utils", "DemoSq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSquared.Viewer", "DemoSquared.Viewer\DemoSquared.Viewer.csproj", "{63AF90D2-3C76-44B8-BE8E-611A41CCDF1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSquared.ViewModel", "DemoSquared.ViewModel\DemoSquared.ViewModel.csproj", "{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{63AF90D2-3C76-44B8-BE8E-611A41CCDF1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63AF90D2-3C76-44B8-BE8E-611A41CCDF1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63AF90D2-3C76-44B8-BE8E-611A41CCDF1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
