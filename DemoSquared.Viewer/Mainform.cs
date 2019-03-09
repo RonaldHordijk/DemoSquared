@@ -1,5 +1,6 @@
 ﻿using DemoSquared.Model;
 using DemoSquared.Utils;
+using DemoSquared.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace DemoSquared.Viewer
   public partial class MainForm : Form
   {
     private gbXML _building;
+    private DisplayModel _displayModel;
 
     public MainForm()
     {
@@ -38,18 +40,18 @@ namespace DemoSquared.Viewer
             MessageBoxIcon.Error);
       }
 
-      var spaces = Converter.ConvertSpaces(ModelQuery.GetSpaces(_building));
+      _displayModel = Converter.Convert(_building);
 
-      foreach (var space in spaces)
+      foreach (var space in _displayModel.Spaces)
       {
         clbSpaces.Items.Add(space);
       }
 
-      var bmp = MakeImage(pbMain.Width, pbMain.Height, spaces);
+      var bmp = MakeImage(pbMain.Width, pbMain.Height);
       pbMain.Image = bmp;
     }
 
-    private Bitmap MakeImage(int width, int height, IEnumerable<ViewModel.Space> spaces)
+    private Bitmap MakeImage(int width, int height)
     {
       Bitmap bmp = new Bitmap(width, height);
       Graphics g = Graphics.FromImage(bmp);
@@ -73,7 +75,6 @@ namespace DemoSquared.Viewer
           if (selected)
             g.FillPolygon(fill, points);
         }
-
       }
 
       return bmp;
@@ -81,22 +82,19 @@ namespace DemoSquared.Viewer
 
     private void clbSpaces_SelectedValueChanged(object sender, EventArgs e)
     {
-      var spaces = Converter.ConvertSpaces(ModelQuery.GetSpaces(_building));
-      var bmp = MakeImage(pbMain.Width, pbMain.Height, spaces);
+      var bmp = MakeImage(pbMain.Width, pbMain.Height);
       pbMain.Image = bmp;
     }
 
     private void clbSpaces_ItemCheck(object sender, ItemCheckEventArgs e)
     {
-      var spaces = Converter.ConvertSpaces(ModelQuery.GetSpaces(_building));
-      var bmp = MakeImage(pbMain.Width, pbMain.Height, spaces);
+      var bmp = MakeImage(pbMain.Width, pbMain.Height);
       pbMain.Image = bmp;
     }
 
     private void MainForm_Resize(object sender, EventArgs e)
     {
-      var spaces = Converter.ConvertSpaces(ModelQuery.GetSpaces(_building));
-      var bmp = MakeImage(pbMain.Width, pbMain.Height, spaces);
+      var bmp = MakeImage(pbMain.Width, pbMain.Height);
       pbMain.Image = bmp;
     }
   }

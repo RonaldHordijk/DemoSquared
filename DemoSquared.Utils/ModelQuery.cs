@@ -7,72 +7,101 @@ using System.Threading.Tasks;
 
 namespace DemoSquared.Utils
 {
+  // helper functions for getting infromation out the gbxml data structure
   public static class ModelQuery
   {
-    public static List<object> GetSurfaces(gbXML building)
+    public static Campus GetCampusFromModel(gbXML model)
     {
-      if (building is null)
+      if (model is null)
         return null;
 
-      foreach (var buildingItem in building.Items)
+      foreach (var item in model.Items)
       {
-        if (buildingItem is Campus)
+        if (item is Campus)
         {
-          var campus = buildingItem as Campus;
-
-          foreach (var campusItem in campus.Items)
-          {
-            if (campusItem is Surface)
-            {
-
-            }
-          }
+          return item as Campus;
         }
       }
 
       return null;
     }
 
-    public static IEnumerable<Space> GetSpaces(gbXML model)
+    public static Building GetBuildingFromCampus(Campus campus)
     {
-      if (model is null)
+      if (campus is null)
+        return null;
+
+      foreach (var item in campus.Items)
+      {
+        if (item is Building)
+        {
+          return item as Building;
+        }
+      }
+
+      return null;
+    }
+
+    public static IEnumerable<Model.Space> GetSpacesFromBuilding(Building building)
+    {
+      if (building is null)
         yield break;
 
-      foreach (var modelItem in model.Items)
+      foreach (var item in building.Items)
       {
-        if (modelItem is Campus)
+        if (item is Model.Space)
         {
-          var campus = modelItem as Campus;
-
-          foreach (var campusItem in campus.Items)
-          {
-            if (campusItem is Building)
-            {
-              var building = campusItem as Building;
-              foreach (var buildingItem in building.Items)
-              {
-                if (buildingItem is Space)
-                  yield return buildingItem as Space;
-              }
-            }
-          }
+          yield return item as Model.Space;
         }
       }
     }
 
-    public static IEnumerable<string> GetSpacesNames(IEnumerable<Space> spaces)
+    public static ShellGeometry GetShellGeometryFromSpace(Model.Space space)
     {
-      foreach (var space in spaces)
+      if (space is null)
+        return null;
+
+      foreach (var spaceItem in space.Items)
       {
-        foreach (var spaceItem in space.Items)
+        if (spaceItem is ShellGeometry)
         {
-          if (spaceItem is string)
-          {
-            if (spaceItem is string)
-              yield return spaceItem as string;
-          }
+          return spaceItem as ShellGeometry;
         }
       }
+
+      return null;
+    }
+
+    public static ClosedShell GetClosedShellFromShellGeometry(ShellGeometry shellGeometry)
+    {
+      if (shellGeometry is null)
+        return null;
+
+      foreach (var item in shellGeometry.Items)
+      {
+        if (item is ClosedShell)
+        {
+          return item as ClosedShell;
+        }
+      }
+
+      return null;
+    }
+
+    public static string GetSpaceName(Model.Space space)
+    {
+      if (space is null)
+        return null;
+
+      foreach (var spaceItem in space.Items)
+      {
+        if (spaceItem is string)
+        {
+          return spaceItem as string;
+        }
+      }
+
+      return null;
     }
   }
 }
