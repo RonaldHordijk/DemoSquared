@@ -10,8 +10,9 @@ namespace DemoSquared.Viewer
 {
   public class ViewPort
   {
-    private int screenWidth_;
-    private int screenHeight_;
+    public int Width { get; private set; }
+    public int Height { get; private set; }
+
     private readonly ViewModel.Point MinWorld_;
     private readonly ViewModel.Point MaxWorld_;
     private ViewModel.Point MidWorld_;
@@ -19,8 +20,8 @@ namespace DemoSquared.Viewer
 
     public ViewPort(int screenWidth, int screenHeight, ViewModel.Point MinWorld, ViewModel.Point MaxWorld)
     {
-      screenWidth_ = screenWidth;
-      screenHeight_ = screenHeight;
+      Width = screenWidth;
+      Height = screenHeight;
 
       MinWorld_ = MinWorld;
       MaxWorld_ = MaxWorld;
@@ -32,8 +33,9 @@ namespace DemoSquared.Viewer
     {
       const double PercetageOfScreenUse = 0.9;
 
-      scale_ = PercetageOfScreenUse * Math.Min(screenWidth_ / (MaxWorld_.X - MinWorld_.X),
-        screenHeight_ / (MaxWorld_.Y - MinWorld_.Y));
+      scale_ = PercetageOfScreenUse * Math.Min(
+        Width / (MaxWorld_.X - MinWorld_.X),
+        Height / (MaxWorld_.Y - MinWorld_.Y));
 
       MidWorld_ = new ViewModel.Point
       {
@@ -45,8 +47,8 @@ namespace DemoSquared.Viewer
 
     public void ResizeScreen(int screenWidth, int screenHeight)
     {
-      screenWidth_ = screenWidth;
-      screenHeight_ = screenHeight;
+      Width = screenWidth;
+      Height = screenHeight;
 
       CalulateTransformation();
     }
@@ -55,8 +57,8 @@ namespace DemoSquared.Viewer
     {
       return new PointF
       {
-        X = (float)((point.X - MidWorld_.X) * scale_ + 0.5 * screenWidth_),
-        Y = (float)((point.Y - MidWorld_.Y) * scale_ + 0.5 * screenHeight_),
+        X = (float)((point.X - MidWorld_.X) * scale_ + 0.5 * Width),
+        Y = (float)((point.Y - MidWorld_.Y) * scale_ + 0.5 * Height),
       };
     }
   }

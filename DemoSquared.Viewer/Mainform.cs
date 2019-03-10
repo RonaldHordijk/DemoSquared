@@ -16,22 +16,22 @@ namespace DemoSquared.Viewer
 {
   public partial class MainForm : Form
   {
-    private gbXML _building;
     private DisplayModel _displayModel;
     private ViewPort _viewPort;
+    private Renderer _renderer;
+    private bool _updating;
 
     public MainForm()
     {
       InitializeComponent();
     }
 
-    private void MainForm_Load(object sender, EventArgs e)
+    private void LoadFile(string filename)
     {
-      var filename = @"C:\Code\DemoSquared\Data\OfficeBuilding.xml";
-
       try
       {
-        _building = Loader.Load(filename);
+        var building = Loader.Load(filename);
+        _displayModel = Converter.Convert(building);
       }
       catch (Exception ex)
       {
@@ -39,70 +39,100 @@ namespace DemoSquared.Viewer
             "Loading failed",
             MessageBoxButtons.OK,
             MessageBoxIcon.Error);
-      }
-
-      _displayModel = Converter.Convert(_building);
-
-      foreach (var space in _displayModel.Spaces)
-      {
-        clbSpaces.Items.Add(space);
+        return;
       }
 
       var (minWorld, maxWorld) = DisplayModelQuery.GetModelBounds(_displayModel);
-
       _viewPort = new ViewPort(pbMain.Width, pbMain.Height, minWorld, maxWorld);
 
-      var bmp = MakeImage(pbMain.Width, pbMain.Height);
-      pbMain.Image = bmp;
+      _renderer = new Renderer(_displayModel, _viewPort);
     }
 
-    private Bitmap MakeImage(int width, int height)
+    private void MainForm_Load(object sender, EventArgs e)
     {
-      Bitmap bmp = new Bitmap(width, height);
-      Graphics g = Graphics.FromImage(bmp);
+      LoadFile(@"C:\Code\DemoSquared\Data\OfficeBuilding.xml");
 
-      g.SmoothingMode = SmoothingMode.HighQuality;
+      FillFloorListBox();
+      FillSpacesListBox();
 
-      g.FillRectangle(new SolidBrush(Color.White), 0, 0, width, height);
+      UpdateDisplay();
+    }
 
-      var pen = new Pen(Color.Black);
-      var fill = new SolidBrush(Color.Lime);
+    private void FillFloorListBox()
+    {
+      _updating = true;
 
-      foreach (ViewModel.Space space in clbSpaces.Items)
+      foreach (var floor in _displayModel.Floors)
       {
-        var selected = clbSpaces.CheckedItems.Contains(space);
+        lbFloors.Items.Add(floor);
+        lbFloors.SetSelected(lbFloors.Items.Count - 1, floor.Visible);
+      }
+      _updating = false;
+    }
 
-        foreach (var polygon in space.Polygons)
+    private void FillSpacesListBox()
+    {
+      _updating = true;
+      lbSpaces.Items.Clear();
+
+      foreach (var floor in _displayModel.Floors)
+      {
+        if (!floor.Visible)
+          continue;
+
+        foreach (var space in floor.Spaces)
         {
-          var points = polygon.Points.Select(_viewPort.WorldToScreen).ToArray();
-          g.DrawPolygon(pen, points);
-
-          if (selected)
-            g.FillPolygon(fill, points);
+          lbSpaces.Items.Add(space);
+          lbSpaces.SetSelected(lbSpaces.Items.Count - 1, space.Selected);
         }
       }
-
-      return bmp;
+      _updating = false;
     }
 
-    private void clbSpaces_SelectedValueChanged(object sender, EventArgs e)
+    private void UpdateDisplay()
     {
-      var bmp = MakeImage(pbMain.Width, pbMain.Height);
-      pbMain.Image = bmp;
-    }
-
-    private void clbSpaces_ItemCheck(object sender, ItemCheckEventArgs e)
-    {
-      var bmp = MakeImage(pbMain.Width, pbMain.Height);
-      pbMain.Image = bmp;
+      pbMain.Image = _renderer.MakeImage();
     }
 
     private void MainForm_Resize(object sender, EventArgs e)
     {
       _viewPort.ResizeScreen(pbMain.Width, pbMain.Height);
 
-      var bmp = MakeImage(pbMain.Width, pbMain.Height);
-      pbMain.Image = bmp;
+      UpdateDisplay();
+    }
+
+    private void lbFloors_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      if (_updating)
+        return;
+
+      foreach (var floor in _displayModel.Floors)
+      {
+        floor.Visible = lbFloors.SelectedItems.Contains(floor);
+      }
+
+      FillSpacesListBox();
+
+      UpdateDisplay();
+    }
+
+    private void lbSpaces_SelectedIndexChanged(object sender, EventArgs e)
+    {
+      if (_updating)
+        return;
+
+      foreach (var floor in _displayModel.Floors)
+      {
+        if (!floor.Visible)
+          continue;
+
+        foreach (var space in floor.Spaces)
+        {
+          space.Selected = lbSpaces.SelectedItems.Contains(space);
+        }
+      }
+
+      UpdateDisplay();
     }
   }
 }

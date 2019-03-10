@@ -48,5 +48,28 @@ namespace DemoSquared.Utils
         Z = points.Max(p => p.Z)
       });
     }
+
+    public static IEnumerable<Floor> CreateFloors(DisplayModel displayModel)
+    {
+      var levels = displayModel.Spaces
+        .Select(s => s.FloorLevel)
+        .Distinct()
+        .ToList();
+
+      levels.Sort();
+
+      foreach (var level in levels)
+      {
+        var newFloor = new Floor
+        {
+          Name = $"Floor Z = {level}"
+        };
+
+        newFloor.Spaces.AddRange(displayModel.Spaces
+                    .Where(s => Math.Abs(s.FloorLevel - level) < MinHeightDifference));
+
+        yield return newFloor;
+      }
+    }
   }
 }

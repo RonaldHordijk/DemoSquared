@@ -26,8 +26,6 @@ namespace DemoSquared.Utils
       return polygon;
     }
 
-
-
     private static ViewModel.Space ConvertSpace(Model.Space space)
     {
       Debug.Assert(space != null);
@@ -59,6 +57,7 @@ namespace DemoSquared.Utils
 
       var displayModel = new DisplayModel();
       displayModel.Spaces.AddRange(spaces.Select(ConvertSpace));
+      displayModel.Floors.AddRange(DisplayModelQuery.CreateFloors(displayModel));
 
       return displayModel;
     }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace DemoSquared.Utils
 {
   // helper functions for getting infromation out the gbxml data structure
-  public static class ModelQuery
+  internal static class ModelQuery
   {
     public static Campus GetCampusFromModel(gbXML model)
     {
