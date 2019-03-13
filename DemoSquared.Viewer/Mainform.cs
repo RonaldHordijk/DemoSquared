@@ -50,7 +50,7 @@ namespace DemoSquared.Viewer
 
     private void MainForm_Load(object sender, EventArgs e)
     {
-      LoadFile(@"C:\Code\DemoSquared\Data\OfficeBuilding.xml");
+      LoadFile(@"..\..\..\Data\OfficeBuilding.xml");
 
       FillFloorListBox();
       FillSpacesListBox();
@@ -91,12 +91,12 @@ namespace DemoSquared.Viewer
 
     private void UpdateDisplay()
     {
-      pbMain.Image = _renderer.MakeImage();
+      pbMain.Image = _renderer?.MakeImage();
     }
 
     private void MainForm_Resize(object sender, EventArgs e)
     {
-      _viewPort.ResizeScreen(pbMain.Width, pbMain.Height);
+      _viewPort?.ResizeScreen(pbMain.Width, pbMain.Height);
 
       UpdateDisplay();
     }
