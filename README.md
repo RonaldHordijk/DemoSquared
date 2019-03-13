@@ -10,6 +10,7 @@ DemoSquared.Viewer - A winform appication for displaying a model.
 
 Future work:  
 - Improve the xsd generated code, look for alternatives
+- Do the rendering in it's own thread
 - Add more validation checks.
 - Test code using other files
 - Add real transformation matrix in display + support for zooming and dragging
