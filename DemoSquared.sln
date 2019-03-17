@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSquared.Viewer", "DemoS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSquared.ViewModel", "DemoSquared.ViewModel\DemoSquared.ViewModel.csproj", "{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoSquared.App", "DemoSquared.App\DemoSquared.App\DemoSquared.App.csproj", "{DE84EA93-283D-4B1D-BFED-AFD1EFA2DAB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoSquared.App.Android", "DemoSquared.App\DemoSquared.App.Android\DemoSquared.App.Android.csproj", "{D1A7D13D-52F8-4FA6-B098-3981CB15E9A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,16 @@ Global
 		{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA38AF8B-4E5B-4A1E-82EB-659CB8FEDBC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE84EA93-283D-4B1D-BFED-AFD1EFA2DAB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE84EA93-283D-4B1D-BFED-AFD1EFA2DAB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE84EA93-283D-4B1D-BFED-AFD1EFA2DAB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE84EA93-283D-4B1D-BFED-AFD1EFA2DAB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A7D13D-52F8-4FA6-B098-3981CB15E9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A7D13D-52F8-4FA6-B098-3981CB15E9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A7D13D-52F8-4FA6-B098-3981CB15E9A5}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D1A7D13D-52F8-4FA6-B098-3981CB15E9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A7D13D-52F8-4FA6-B098-3981CB15E9A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A7D13D-52F8-4FA6-B098-3981CB15E9A5}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

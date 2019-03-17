@@ -10,15 +10,21 @@ using System.Xml.Serialization;
 
 namespace DemoSquared.Utils
 {
-  static public class Loader
-  {
-    static public gbXML Load(string filename)
+    static public class Loader
     {
-      var serializer = new XmlSerializer(typeof(gbXML));
-      using (var file = File.OpenText(filename))
-      {
-        return serializer.Deserialize(file) as gbXML;
-      }
+        static public gbXML Load(string filename)
+        {
+            var serializer = new XmlSerializer(typeof(gbXML));
+            using (var file = File.OpenText(filename))
+            {
+                return serializer.Deserialize(file) as gbXML;
+            }
+        }
+
+        static public gbXML Load(Stream stream)
+        {
+            var serializer = new XmlSerializer(typeof(gbXML));
+            return serializer.Deserialize(stream) as gbXML;
+        }
     }
-  }
 }
